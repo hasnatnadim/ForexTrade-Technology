@@ -1,0 +1,31 @@
+FOREX TRADE TECHNOLOGY FSE — BLOG SYSTEM REPAIR 5.4.2.2
+
+Repairs
+- Fixed the single-post template so it renders the current post title, excerpt, featured image, author/date/tags and the actual Post Content block (instead of a generic archive query).
+- Rebuilt Recent Articles cards as a separate responsive three-column Query Loop and enabled Query Loop's native excludeCurrent flag so the open post is not repeated.
+- Replaced the generic archive/index/home templates with a real blog layout: featured article, article cards, pagination, native Search block and native Categories dropdown.
+- Added search.html so WordPress search submissions land on a template that renders the inherited search query, results cards and pagination.
+- Added category.html with an inherited category archive query, plus the same working native search and category selector.
+- Added page-blog.html for a regular WordPress page whose slug is /blog/.
+- Added assets/css/blog-system.css. All rules are scoped under .ftt-blog and do not overwrite the theme's existing site.css.
+- Enqueued the new stylesheet after the existing FTT site stylesheet and exposed it to the block editor.
+
+Expected behavior
+- The Search button submits a standard WordPress search across matching posts and displays results through search.html.
+- The Filter by topic dropdown uses the standard core Categories block to navigate to a category archive rendered by category.html.
+- This deliberately uses WordPress core blocks and native URLs, not fragile JavaScript-only filtering. Search finds posts beyond the currently visible page of cards; selecting a category opens the complete category archive.
+- Search/category archive pagination is also driven by WordPress core Query Loop blocks.
+
+Setup notes
+1. Back up the current theme and database before replacing the theme.
+2. Install/activate this theme ZIP on staging first.
+3. For a WordPress posts index, set Settings > Reading > Your homepage displays > A static page and select your Blog page under Posts page. The home.html archive layout is then used automatically.
+4. If /blog/ is instead an ordinary static page, the page-blog.html file is intended for the page slug "blog". The Search and topic controls submit to WordPress's standard search/category URLs.
+5. Check categories have published posts; a dropdown with no categories assigned cannot filter meaningful content.
+6. If a persistent/custom cache is enabled, purge it after theme replacement.
+
+Validation scope
+- Template source files and JSON attributes have been parsed/checked for balanced WordPress block comment pairs and JSON syntax.
+- PHP syntax is checked where PHP CLI is available.
+- The ZIP package is structurally checked after creation.
+- These files have not been activated inside a live WordPress instance in this environment. Please perform a staging render check before production.

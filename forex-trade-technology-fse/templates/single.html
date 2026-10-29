@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+<!-- wp:group {"tagName":"main","className":"ftt-blog ftt-single-post","layout":{"type":"constrained","contentSize":"1160px"}} -->
+<main class="wp-block-group ftt-blog ftt-single-post">
+  <!-- wp:group {"className":"ftt-single-hero","layout":{"type":"constrained","contentSize":"900px"}} -->
+  <div class="wp-block-group ftt-single-hero">
+    <!-- wp:post-terms {"term":"category","className":"ftt-blog-category"} /-->
+    <!-- wp:post-title {"level":1,"className":"ftt-single-title"} /-->
+    <!-- wp:post-excerpt {"excerptLength":44,"className":"ftt-single-deck"} /-->
+    <!-- wp:group {"className":"ftt-single-meta","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+    <div class="wp-block-group ftt-single-meta"><!-- wp:post-author {"showBio":false,"avatarSize":40} /--><!-- wp:post-date /--><!-- wp:post-terms {"term":"post_tag","prefix":"Topics: ","className":"ftt-single-tags"} /--></div>
+    <!-- /wp:group -->
+  </div><!-- /wp:group -->
+  <!-- wp:post-featured-image {"aspectRatio":"21/9","className":"ftt-single-featured"} /-->
+  <!-- wp:group {"className":"ftt-single-content","layout":{"type":"constrained","contentSize":"800px"}} -->
+  <div class="wp-block-group ftt-single-content">
+    <!-- wp:post-content {"layout":{"type":"constrained","contentSize":"800px"}} /-->
+    <!-- wp:separator {"className":"ftt-single-divider"} --><hr class="wp-block-separator has-alpha-channel-opacity ftt-single-divider" /><!-- /wp:separator -->
+    <!-- wp:post-terms {"term":"post_tag","className":"ftt-single-tag-list"} /-->
+    <!-- wp:post-author-biography /-->
+    <!-- wp:comments --><div class="wp-block-comments"><!-- wp:comments-title /--><!-- wp:comment-template --><!-- wp:group {"className":"ftt-comment-row","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} --><div class="wp-block-group ftt-comment-row"><!-- wp:avatar {"size":40} /--><!-- wp:group {"layout":{"type":"constrained"}} --><div class="wp-block-group"><!-- wp:comment-author-name /--><!-- wp:comment-date /--><!-- wp:comment-content /--><!-- wp:comment-reply-link /--></div><!-- /wp:group --></div><!-- /wp:group --><!-- /wp:comment-template --><!-- wp:post-comments-form /--></div><!-- /wp:comments -->
+  </div><!-- /wp:group -->
+  <!-- wp:group {"className":"ftt-related-section","layout":{"type":"constrained","contentSize":"1160px"}} -->
+  <div class="wp-block-group ftt-related-section">
+    <!-- wp:group {"className":"ftt-related-heading","layout":{"type":"constrained"}} --><div class="wp-block-group ftt-related-heading"><!-- wp:paragraph {"className":"ftt-blog-eyebrow"} --><p class="ftt-blog-eyebrow">KEEP EXPLORING</p><!-- /wp:paragraph --><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Recent articles</h2><!-- /wp:heading --><!-- wp:paragraph {"className":"ftt-blog-muted"} --><p class="ftt-blog-muted">More practical ideas from the Forex Trade Technology journal.</p><!-- /wp:paragraph --></div><!-- /wp:group -->
+    <!-- wp:query {"queryId":61,"className":"ftt-related-query","query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[],"excludeCurrent":true},"layout":{"type":"default"}} -->
+    <div class="wp-block-query ftt-related-query">
+      <!-- wp:post-template {"className":"ftt-related-grid","layout":{"type":"grid","columnCount":3}} -->
+      <!-- wp:group {"className":"ftt-related-card","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group ftt-related-card">
+        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/10","className":"ftt-related-image"} /-->
+        <!-- wp:group {"className":"ftt-related-card-body","layout":{"type":"constrained"}} --><div class="wp-block-group ftt-related-card-body"><!-- wp:post-terms {"term":"category","className":"ftt-blog-category"} /--><!-- wp:post-title {"isLink":true,"level":3,"className":"ftt-related-title"} /--><!-- wp:post-excerpt {"excerptLength":17,"moreText":"Read article","className":"ftt-blog-excerpt"} /--><!-- wp:group {"className":"ftt-blog-meta","layout":{"type":"flex","flexWrap":"wrap"}} --><div class="wp-block-group ftt-blog-meta"><!-- wp:post-date /--></div><!-- /wp:group --></div><!-- /wp:group -->
+      </div><!-- /wp:group -->
+      <!-- /wp:post-template -->
+      <!-- wp:query-no-results --><!-- wp:paragraph --><p>More articles will appear here as they are published.</p><!-- /wp:paragraph --><!-- /wp:query-no-results -->
+    </div><!-- /wp:query -->
+  </div><!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

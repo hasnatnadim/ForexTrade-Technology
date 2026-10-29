@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.8/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1180px",
+      "wideSize": "1440px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "navy",
+          "name": "Deep Navy",
+          "color": "#0B1220"
+        },
+        {
+          "slug": "mint",
+          "name": "Mint",
+          "color": "#DDF7EC"
+        },
+        {
+          "slug": "emerald",
+          "name": "Emerald",
+          "color": "#079669"
+        },
+        {
+          "slug": "orange",
+          "name": "Orange Accent",
+          "color": "#FF8A3D"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Inter",
+          "slug": "inter",
+          "fontFamily": "Inter, sans-serif"
+        },
+        {
+          "name": "Manrope",
+          "slug": "manrope",
+          "fontFamily": "Manrope, sans-serif"
+        }
+      ],
+      "fluid": true
+    },
+    "spacing": {
+      "units": [
+        "px",
+        "rem",
+        "em",
+        "%",
+        "vw",
+        "vh"
+      ]
+    },
+    "blocks": {
+      "core/group": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": true,
+          "fontSize": true,
+          "fontWeight": true,
+          "lineHeight": true
+        }
+      },
+      "core/image": {
+        "spacing": {
+          "margin": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "Inter, sans-serif",
+      "lineHeight": "1.65"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "Manrope, sans-serif",
+          "fontWeight": "600",
+          "lineHeight": "1.12"
+        },
+        "color": {
+          "text": "#0B1220"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#079669"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
+}

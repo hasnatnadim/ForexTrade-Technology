@@ -1,0 +1,64 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+<!-- wp:group {"tagName":"main","className":"ftt-blog ftt-blog-archive","layout":{"type":"constrained","contentSize":"1240px"}} -->
+<main class="wp-block-group ftt-blog ftt-blog-archive">
+  <!-- wp:group {"className":"ftt-blog-hero","layout":{"type":"constrained","contentSize":"900px"}} -->
+  <div class="wp-block-group ftt-blog-hero">
+    <!-- wp:paragraph {"className":"ftt-blog-eyebrow"} --><p class="ftt-blog-eyebrow">INSIGHTS · STRATEGY · TECHNOLOGY</p><!-- /wp:paragraph -->
+    <!-- wp:heading {"level":1,"className":"ftt-blog-title"} --><h1 class="wp-block-heading ftt-blog-title">The Brokerage Technology Journal</h1><!-- /wp:heading -->
+    <!-- wp:paragraph {"className":"ftt-blog-intro"} --><p class="ftt-blog-intro">Practical perspectives for building, operating and growing a modern FX brokerage—from trading infrastructure and liquidity to client experience and day-to-day operations.</p><!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group {"className":"ftt-blog-tools","layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+  <div class="wp-block-group ftt-blog-tools">
+    <!-- wp:group {"className":"ftt-blog-search-wrap","layout":{"type":"constrained"}} --><div class="wp-block-group ftt-blog-search-wrap"><!-- wp:search {"label":"Search articles","showLabel":false,"placeholder":"Search articles by keyword…","buttonText":"Search","buttonPosition":"button-inside","buttonUseIcon":false,"className":"ftt-blog-search"} /--></div><!-- /wp:group -->
+    <!-- wp:group {"className":"ftt-blog-filter-wrap","layout":{"type":"constrained"}} --><div class="wp-block-group ftt-blog-filter-wrap"><!-- wp:categories {"showPostCounts":false,"showHierarchy":false,"showOnlyTopLevel":false,"displayAsDropdown":true,"showLabel":true,"label":"Filter by topic","className":"ftt-blog-topic-filter"} /--></div><!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group {"className":"ftt-blog-featured-section","layout":{"type":"constrained","contentSize":"1240px"}} -->
+  <div class="wp-block-group ftt-blog-featured-section">
+    <!-- wp:query {"queryId":51,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[]},"layout":{"type":"default"}} -->
+    <div class="wp-block-query">
+      <!-- wp:post-template {"layout":{"type":"default"}} -->
+      <!-- wp:group {"className":"ftt-blog-feature-card","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+      <div class="wp-block-group ftt-blog-feature-card">
+        <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","className":"ftt-blog-feature-image"} /-->
+        <!-- wp:group {"className":"ftt-blog-feature-copy","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group ftt-blog-feature-copy">
+          <!-- wp:post-terms {"term":"category","className":"ftt-blog-category"} /-->
+          <!-- wp:post-title {"isLink":true,"level":2,"className":"ftt-blog-feature-title"} /-->
+          <!-- wp:post-excerpt {"moreText":"Read the full article","excerptLength":36,"className":"ftt-blog-excerpt"} /-->
+          <!-- wp:group {"className":"ftt-blog-meta","layout":{"type":"flex","flexWrap":"wrap"}} --><div class="wp-block-group ftt-blog-meta"><!-- wp:post-author-name /--><!-- wp:post-date /--></div><!-- /wp:group -->
+        </div><!-- /wp:group -->
+      </div><!-- /wp:group -->
+      <!-- /wp:post-template -->
+      <!-- wp:query-no-results --><!-- wp:paragraph --><p>There are no articles yet. Please check back soon.</p><!-- /wp:paragraph --><!-- /wp:query-no-results -->
+    </div><!-- /wp:query -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group {"className":"ftt-blog-section-heading","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->
+  <div class="wp-block-group ftt-blog-section-heading">
+    <!-- wp:group {"layout":{"type":"constrained"}} --><div class="wp-block-group"><!-- wp:paragraph {"className":"ftt-blog-eyebrow"} --><p class="ftt-blog-eyebrow">LATEST THINKING</p><!-- /wp:paragraph --><!-- wp:heading {"level":2} --><h2 class="wp-block-heading">Ideas for your next move</h2><!-- /wp:heading --></div><!-- /wp:group -->
+    <!-- wp:paragraph {"className":"ftt-blog-muted"} --><p class="ftt-blog-muted">Analysis for brokerage leaders and technology teams</p><!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:query {"queryId":52,"className":"ftt-blog-listing-query","query":{"perPage":9,"pages":0,"offset":1,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[],"format":[]},"layout":{"type":"default"}} -->
+  <div class="wp-block-query ftt-blog-listing-query">
+    <!-- wp:post-template {"className":"ftt-blog-card-grid","layout":{"type":"grid","columnCount":3}} -->
+    <!-- wp:group {"className":"ftt-blog-card","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group ftt-blog-card">
+      <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/10","className":"ftt-blog-card-image"} /-->
+      <!-- wp:group {"className":"ftt-blog-card-body","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group ftt-blog-card-body">
+        <!-- wp:post-terms {"term":"category","className":"ftt-blog-category"} /-->
+        <!-- wp:post-title {"isLink":true,"level":3,"className":"ftt-blog-card-title"} /-->
+        <!-- wp:post-excerpt {"excerptLength":24,"moreText":"Read article","className":"ftt-blog-excerpt"} /-->
+        <!-- wp:group {"className":"ftt-blog-meta","layout":{"type":"flex","flexWrap":"wrap"}} --><div class="wp-block-group ftt-blog-meta"><!-- wp:post-date /--><!-- wp:post-author-name /--></div><!-- /wp:group -->
+      </div><!-- /wp:group -->
+    </div><!-- /wp:group -->
+    <!-- /wp:post-template -->
+    <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"},"className":"ftt-blog-pagination"} --><!-- wp:query-pagination-previous {"label":"Newer"} /--><!-- wp:query-pagination-numbers /--><!-- wp:query-pagination-next {"label":"Older"} /--><!-- /wp:query-pagination -->
+    <!-- wp:query-no-results --><!-- wp:paragraph --><p>No matching articles were found. Try a different search or topic.</p><!-- /wp:paragraph --><!-- /wp:query-no-results -->
+  </div><!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->

@@ -1,0 +1,3 @@
+Forex Trade Technology FSE Theme V5.4.2
+
+Install through Appearance > Themes > Add New > Upload Theme. Import the companion WXR XML on a clean staging site only, then set Settings > Reading to a static page and select Home. Use Appearance > Editor for templates and Header/Footer parts. To preserve the approved design, each page section is currently a separate Custom HTML block. This keeps markup editable in code mode but is not yet a fully native Gutenberg block conversion for every nested card/text. Images are bundled in the theme and use root-relative theme paths. Before production, test navigation, forms, accordions, assets and responsive behavior on staging.
